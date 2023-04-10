@@ -1,0 +1,22 @@
+﻿<Window x:Class="PT_Lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PT_Lab6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="LightGray">
+    <Grid>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="600" Background="White"/>
+        <Button x:Name="colorChoiceButton" HorizontalAlignment="Left" Margin="615,309,0,0" VerticalAlignment="Top" Width="167" Click="colorChoiceButton_Click" Height="100" Background="Red" />
+        <TextBox x:Name="ipTextBox" HorizontalAlignment="Left" Height="23" Margin="662,10,0,0" TextWrapping="Wrap" Text="localhost" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="portTextBox" HorizontalAlignment="Left" Height="23" Margin="662,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="IP" HorizontalAlignment="Left" Margin="615,10,0,0" VerticalAlignment="Top" Height="23" Width="42"/>
+        <Label Content="Port" HorizontalAlignment="Left" Margin="615,38,0,0" VerticalAlignment="Top" Height="23" Width="42"/>
+        <Button x:Name="connectButton" Content="Connect" HorizontalAlignment="Left" Margin="615,84,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="disconnectButton" Content="Disconnect" HorizontalAlignment="Left" Margin="707,84,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Slider x:Name="lineThicknessSlider" HorizontalAlignment="Left" Margin="615,272,0,0" VerticalAlignment="Top" Width="150" Value="5" Maximum="20" Minimum="1"/>
+        <TextBox x:Name="lineThicknessTextBox" HorizontalAlignment="Left" Height="23" Margin="765,267,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="17"/>
+        <TextBlock x:Name="statusTextBlock" HorizontalAlignment="Left" Margin="615,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Height="23" Text="Disconnected" TextAlignment="Center"/>
+    </Grid>
+</Window>
